@@ -1,0 +1,76 @@
+
+
+<div class="container my-2">
+    <h2 class="text-center">Recent Posts</h2>
+    <div class="row" id="posts-container">
+    </div>
+</div>
+
+
+
+<!-- Read More -->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="exampleModalScrollableTitle" >
+                    <h5 id="title">Title</h5>
+                    <h6 id="author">Author</h6>
+                </div>
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button><br>
+                
+            </div>
+            <div class="modal-body" id="modalBody">
+                
+            </div>
+            <div class="modal-body">
+               <center><h4>Comments : -> </h4></center> <br>
+                <div id="comments">
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Comment Button -->
+
+<div class="modal fade" id="writeComment" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="exampleModalScrollableTitle" >
+                    <h5 id="commentTitle">Write Your Comment </h5>
+                    
+                </div>
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button><br>
+                
+            </div>
+            
+            <class class="modal-body">
+                <h6>Write Your Comment Here : -</h6>
+                <div >
+                    <textarea required name="" id="commentInp" cols="40" rows="5"></textarea>
+                </div>
+                <button id="submitComment" class="btn btn-secondary" data-dismiss="modal">Submit</button>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+
+   
+  
+<script defer src="../app/writeComment.js"></script>
+<script defer src="../app/allPosts.js"></script>

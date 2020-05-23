@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Techie Cube</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" data-component="allPosts">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" name="writePost" data-component="writePost">Write Posts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" data-component="myPost">My Posts</a>
+        </li>
+
+      </ul>
+      <div class="mr-5">
+        <div id="loggedIn">
+          <h4 style="display: inline-block;" >Hello! <span id="username">Guest</span></h4>
+          <button class="btn" id="logout">Logout</button>
+        </div>
+        
+        <div  id="notLoggedIn">
+          <button type="button" class="btn" id="btnLogin">Login</button>
+          <button class="btn" id="btnSignUp">Signup</button>
+        </div>
+      </div>
+      </form>
+    </div>
+  </nav>
+  
+
+
+  <script defer src="../app/navbar.js"></script>

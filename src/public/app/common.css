@@ -1,0 +1,21 @@
+#navbar{
+    z-index: 1;
+    position: sticky;
+    top:0px;
+}
+
+#footer{
+    background-color:lightgray;
+    color: black;
+    position: sticky;
+    opacity: 1;
+    bottom: 0px;
+}
+#navbar{
+    position: sticky;
+    top: 0px;
+}
+
+#content{
+    min-height: 510px;
+}
