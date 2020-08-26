@@ -49,6 +49,7 @@ function resumingSession(){
     $("#logout").click(()=>{
         $.get('/api/users/logout',{},()=>{
             resumingSession()
+            $('#content').load(`/components/allPosts.html`)
         })
     }) 
 
