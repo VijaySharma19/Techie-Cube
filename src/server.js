@@ -16,10 +16,11 @@ app.use(express.urlencoded({extended:true}))
 app.use('/',express.static(__dirname+'/public'))
 app.use('/api',require("./routes").route)
 
+const Server_Port = process.env.PORT || 3232
 
 db.sync().then(()=>{
-    app.listen(2222,()=>{
-        console.log("server started at http://localhost:2222")
+    app.listen(Server_Port,()=>{
+        console.log("server started at http://localhost:3232")
     })
 }).catch((err)=>{
     console.log(new Error('failed to connect to database'))
